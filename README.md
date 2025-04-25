@@ -75,12 +75,11 @@ Each module:
 - Has its own `build.gradle` file for declaring module-specific dependencies.
 - Can reference other modules using Gradle's project dependency syntax (`project(':libs:common')`, etc.).
 
-The **root project**:
+The **root project** provides the central configuration for the entire Gradle build.
+- It defines plugin versions, repositories, dependency versions, and common tasks.
+- Any global settings such as Java version, compiler options, and shared plugins are configured here.
+- Acts as the single source of truth for versioning of subprojects.
 
-- Sets global configurations like repositories, Java version, plugins, and dependency versions.
-- Centralizes versioning using `gradle.properties`.
-
----
 
 ## 🔨 Useful Gradle Commands
 
