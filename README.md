@@ -1,7 +1,14 @@
 
----
+# 🔧 Project Build & Deployment Guide
 
-## 📚 Detailed Module Descriptions
+## 📦 Root Project Overview
+
+This is a multi-module Gradle project that includes several subprojects for modular functionality.  
+The root project also handles global configurations and versioning.
+
+### 📌 Project Version
+The current version is maintained in the root project and applied consistently across all submodules.
+
 
 ### 🔧 `libs/` — Shared Libraries
 
@@ -79,7 +86,7 @@ The **root project** provides the central configuration for the entire Gradle bu
 - It defines plugin versions, repositories, dependency versions, and common tasks.
 - Any global settings such as Java version, compiler options, and shared plugins are configured here.
 - Acts as the single source of truth for versioning of subprojects.
-
+- ext.tomcatWebapps = System.getenv('TOMCAT_WEBAPPS') Add tomcatwebapp for development
 
 ## 🔨 Useful Gradle Commands
 
